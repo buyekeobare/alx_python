@@ -1,12 +1,13 @@
 def fibonacci_sequence(n):
     if n <= 0:
-        return []
-
-    fibonacci_numbers = [0, 1]
-    while len(fibonacci_numbers) < n:
-        next_number = fibonacci_numbers[-1] + fibonacci_numbers[-2]
-        if next_number < 0:
-            return []  # Overflow occurred, cannot generate Fibonacci numbers for n
-        fibonacci_numbers.append(next_number)
-
-    return fibonacci_numbers[:n]
+        return[]
+    elif n == 1:
+        return [0]
+    elif n == 2:
+        return [0,1]
+    else:
+        fib_list = [0,1]
+        while len(fib_list) < n:
+            next_num = fib_list[-1] + fib_list[2]
+            fib_list .append (next_num)
+            return fib_list    
