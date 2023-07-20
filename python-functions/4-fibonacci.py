@@ -4,10 +4,10 @@ def fibonacci_sequence(n):
     elif n == 1:
         return [0]
     elif n == 2:
-        return [0,1]
+        return [0, 1]
     else:
-        fib_list = [0,1]
+        fib_list = [0, 1]
         while len(fib_list) < n:
-            next_num = fib_list[-1] + fib_list[2]
-            fib_list .append (next_num)
-            return fib_list    
+            next_num = fib_list[-1] + fib_list[-2]
+            fib_list.append (next_num)
+        return fib_list    
