@@ -13,4 +13,4 @@ def validate_password (password):
                 has_lowercase = True
                 if char .isdigit():
                     has_digit = True
-                    return has_uppercase and has_lowercase and has_digit    
+    return has_uppercase and has_lowercase and has_digit    
