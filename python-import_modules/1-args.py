@@ -12,5 +12,5 @@ def main():
     for i, arg in enumerate(args, 1):
         print(f"{i}: {arg}")
 
-if __name__ == "_main__":
+if __name__ == "__main__":
     main()
