@@ -1,3 +1,3 @@
-def multiple_returns(sentence):
-    return (len(sentence), sentence[0] if len(sentence) > 0 
-            else None)
+def update_dictionary(a_dictionary, key, value):
+    a_dictionary[key] = value
+    return a_dictionary
