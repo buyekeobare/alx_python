@@ -1,4 +1,4 @@
-# Data Structures: Lists, Tuples
+# Python - Data Structures: Lists, Tuples
 
 Why Python programming is awesome
 What are lists and how to use them
