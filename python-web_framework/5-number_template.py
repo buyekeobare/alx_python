@@ -37,9 +37,10 @@ def python(text):
 def number(n):
   return("{} is a number" .format(n))
 
+
 @app.route("/number_template/<int:n>")
 def template(n):
-  return(render_template("5-number.html", number=n))
+  return(render_template('5-number.html', number=n))
 
 
 
