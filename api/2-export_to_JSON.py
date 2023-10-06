@@ -1,57 +1,24 @@
 #!/usr/bin/python3
-"""
-Python script to export data to a JSON file.
-"""
+"""fetches information from JSONplaceholder API and exports to JSON"""
 
-import json
-import requests
-import sys
+from json import dump
+from requests import get
+from sys import argv
 
 
-def data_to_json(user_id):
-    """
-    Fetches the employee's details and TODO list using the
-    provided API endpoints,
-    exports the informationto a JSON file.
+if __name__ == "__main__":
+    todo_url = "https://jsonplaceholder.typicode.com/user/{}/todos".format(
+        argv[1])
+    name_url = "https://jsonplaceholder.typicode.com/users/{}".format(argv[1])
+    todo_result = get(todo_url).json()
+    name_result = get(name_url).json()
 
-    data_to_json(-1)
-    Traceback (most recent call last):
-    
-    ValueError: n must be = 0
-    
-    Parameters:
-    - employee_id (int): The ID of the employee.
+    todo_list = []
+    for todo in todo_result:
+        todo_dict = {}
+        todo_dict.update({"task": todo.get("title"), "completed": todo.get(
+            "completed"), "username": name_result.get("username")})
+        todo_list.append(todo_dict)
 
-    Returns:
-    None
-    """
-    # format url with input from user
-    user_url = 'https://jsonplaceholder.typicode.com/users/{}'\
-    .format(user_id)
-    todo_url = 'https://jsonplaceholder.typicode.com/users/{}/todos'\
-    .format(user_id)
-
-    # request data frm todo and user api
-    user_data = requests.get(user_url).json()
-    todo_data = requests.get(todo_url).json()
-
-    # creat a json data from the todo and user object
-    json_data = {
-        user_id : [ {
-                "task":task['title'], "completed":task['completed'],
-                "username":user_data['username'],
-            }
-            for task in todo_data
-        ]
-    }
-
-    # Write to JSON file name filename
-    filename = f"{user_id}.json"
-
-    # open the file and overwrite it content with w
-    with open(filename, 'w') as file:
-        json.dump(json_data, file, indent=2)
-
-# function call
-if __name__=='__main__':
-    data_to_json(sys.argv[1])
+    with open("{}.json".format(argv[1]), 'w') as f:
+        dump({argv[1]: todo_list}, f)

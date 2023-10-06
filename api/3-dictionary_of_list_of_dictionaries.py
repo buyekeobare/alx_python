@@ -1,38 +1,33 @@
 #!/usr/bin/python3
-import json
-import requests
+"""fetches information from JSONplaceholder API and exports to JSON"""
 
-# Base URL for the API
-BASE_URL = "https://jsonplaceholder.typicode.com"
+from json import dump
+from requests import get
+from sys import argv
 
-# Fetch all users
-users_response = requests.get(f"{BASE_URL}/users")
-users = users_response.json()
+if __name__ == "__main__":
+    users_url = "https://jsonplaceholder.typicode.com/users"
+    users_result = get(users_url).json()
 
-# Dictionary to hold all the data
-all_data = {}
+    big_dict = {}
+    for user in users_result:
+        todo_list = []
 
-# Loop through each user and fetch their tasks
-for user in users:
-    user_id = user["id"]
-    username = user["username"]
+        pep_fix = "https://jsonplaceholder.typicode.com"
+        todos_url = pep_fix + "/user/{}/todos".format(user.get("id"))
+        name_url = "https://jsonplaceholder.typicode.com/users/{}".format(
+            user.get("id"))
 
-    # Fetch tasks for this user
-    todos_response = requests.get(f"{BASE_URL}/todos?userId={user_id}")
-    todos_data = todos_response.json()
+        todo_result = get(todos_url).json()
+        name_result = get(name_url).json()
+        for todo in todo_result:
+            todo_dict = {}
+            todo_dict.update({"username": name_result.get("username"),
+                              "task": todo.get("title"),
+                              "completed": todo.get("completed")})
+            todo_list.append(todo_dict)
 
-    # Format tasks for this user
-    tasks_list = [{
-        "username": username,
-        "task": task["title"],
-        "completed": task["completed"]
-    } for task in todos_data]
+        big_dict.update({user.get("id"): todo_list})
 
-    all_data[str(user_id)] = tasks_list
-
-# Write the data to the JSON file
-filename = "todo_all_employees.json"
-with open(filename, 'w') as file:
-    json.dump(all_data, file)
-
-filename
+    with open("todo_all_employees.json", 'w') as f:
+        dump(big_dict, f)
