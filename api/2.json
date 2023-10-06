@@ -25,7 +25,11 @@
       "completed": true,
       "username": "Antonette"
     },
-    { "task": "aliquam aut quasi", "completed": true, "username": "Antonette" },
+    {
+      "task": "aliquam aut quasi",
+      "completed": true,
+      "username": "Antonette"
+    },
     {
       "task": "veritatis pariatur delectus",
       "completed": true,
@@ -76,8 +80,16 @@
       "completed": true,
       "username": "Antonette"
     },
-    { "task": "sunt cum tempora", "completed": false, "username": "Antonette" },
-    { "task": "totam quia non", "completed": false, "username": "Antonette" },
+    {
+      "task": "sunt cum tempora",
+      "completed": false,
+      "username": "Antonette"
+    },
+    {
+      "task": "totam quia non",
+      "completed": false,
+      "username": "Antonette"
+    },
     {
       "task": "doloremque quibusdam asperiores libero corrupti illum qui omnis",
       "completed": false,
