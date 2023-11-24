@@ -67,3 +67,87 @@ NB: The endpoint for access specific TODO items for an employee with ID = 1 will
 - File name must be: todo_all_employees.json
 
 ###
+
+# Evalution Quiz
+
+## Responses
+
+0. What is the purpose of URL encoding?
+
+To convert special characters in a URL to a valid format
+
+1. What is the purpose of versioning in APIs?
+
+To allow multiple API versions to coexist and support backward compatibility
+
+2. What is the purpose of an API key?
+
+It is used to authenticate and authorize access to an API
+
+3. What are microservices?
+
+Small, independent, and loosely coupled services that work together
+
+4. What is a REST API?
+
+An API that follows the principles of Representational State Transfer
+
+5. How can you handle paginated API responses in Python?
+
+By making multiple API requests and merging the responses together
+
+6. How can you handle errors and exceptions when making API requests in Python?
+
+By using try-except blocks to catch and handle exceptions
+
+7. How can you authenticate API requests using an API key?
+
+By including the API key in the request headers
+
+8. What is the purpose of rate limiting in API usage?
+
+To limit the number of requests an API consumer can make within a specified time period
+
+9. What is the significance of CapWords or CamelCase in Python?
+
+It is a naming convention for class names in Python
+
+10. What does API stand for?
+
+Application Programming Interface
+
+11. What is the difference between PUT and POST HTTP methods?
+
+PUT is used for updating resources, while POST is used for creating resources
+
+12. What is the Pythonic variable name style?
+
+snake_case
+
+13. What is the Pythonic class name style?
+
+PascalCase
+
+14. What is the JSON format?
+
+JavaScript Object Notation format used for storing hierarchical data
+
+15. What is the Pythonic function name style?
+
+snake_case
+
+16. What is the Pythonic package and module name style?
+
+snake_case
+
+17. What is the CSV format?
+
+Comma-Separated Values format used for storing tabular data
+
+18. What is the difference between synchronous and asynchronous API requests?
+
+Synchronous requests block the code execution until a response is received, while asynchronous requests allow the code execution to continue while waiting for a response.
+
+19. What is the Pythonic constant name style?
+
+snake_case
