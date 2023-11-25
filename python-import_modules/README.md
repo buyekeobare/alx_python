@@ -77,3 +77,59 @@ Write a function that raises a name exception with a message.
 
 Prototype: def raise_exception_msg(message=""):
 You are not allowed to import any module
+
+# Evaluation Quiz
+
+0. What do these lines print?
+
+> > > def my_function(counter):
+> > > print("Counter: {}".format(counter))
+> > >
+> > > my_function(12)
+
+Counter: 12
+
+1. What do these lines print?
+
+> > > def my_function(counter=89):
+> > > return counter + 1
+> > >
+> > > print(my_function())
+
+90
+
+2. What do these lines print?
+
+> > > def my_function():
+> > > print("In my function")
+> > >
+> > > my_function()
+
+In my function
+
+3. What do these lines print?
+
+> > > def my_function(counter=89):
+> > > print("Counter: {}".format(counter))
+> > >
+> > > my_function(12)
+
+Counter: 12
+
+4. What do these lines print?
+
+> > > def my_function():
+> > > print("In my function")
+> > >
+> > > my_function
+
+function my_function at …
+
+5. What do these lines print?
+
+> > > def my_function(counter=89):
+> > > print("Counter: {}".format(counter))
+> > >
+> > > my_function()
+
+Counter: 89

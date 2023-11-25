@@ -42,3 +42,82 @@ Write a function that returns a tuple with the length of a string and its first 
 Prototype: def multiple_returns(sentence):
 If the sentence is empty, the first character should be equal to None
 You are not allowed to import any module
+
+# Evaluation Quiz
+
+0. What do these lines print?
+
+> > > a = [1, 2, 3, 4]
+> > > b = a
+> > > a[2] = 10
+> > > b
+
+[1, 2, 10, 4]
+
+1. What do these lines print?
+
+> > > a = [1, 2, 3, 4]
+> > > a[-3]
+
+2
+
+2. What do these lines print?
+
+> > > a = [1, 2, 3, 4]
+> > > a[1:3]
+
+[2, 3]
+
+3. What do these lines print?
+
+> > > a = [1, 2, 3, 4]
+> > > a[0]
+
+1
+
+4. What do these lines print?
+
+> > > a = [1, 2, 3, 4]
+> > > b = a
+> > > b
+
+[1, 2, 3, 4]
+
+5. What do these lines print?
+
+> > > a = [1, 2, 3, 4]
+> > > a[2] = 10
+> > > a
+
+[1, 2, 10, 4]
+
+6. What do these lines print?
+
+> > > a = [1, 2, 3, 4]
+> > > len(a)
+
+4
+
+7. What do these lines print?
+
+> > > a = [1, 2, 3, 4]
+> > > b = a
+> > > a[2] = 10
+> > > a
+
+[1, 2, 10, 4]
+
+8. What do these lines print?
+
+> > > a = [1, 2, 3, 4]
+> > > a[-1]
+
+4
+
+9. What do these lines print?
+
+> > > a = [1, 2, 3, 4]
+> > > a.append(5)
+> > > len(a)
+
+5

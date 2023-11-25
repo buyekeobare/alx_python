@@ -89,3 +89,127 @@ if size is equal to 0, print an empty line
 You are not allowed to import any module
 
 # Evaluation Quiz
+
+0. In this following code, what is \_\_password?
+
+class User:
+id = 89
+name = "no name"
+\_\_password = None
+
+    def __init__(self, new_name=None):
+        self.is_new = True
+        if new_name is not None:
+            self.name = new_name
+
+A private class attribute
+
+1. What do these lines print?
+
+> > > class User:
+> > > id = 89
+> > > name = "no name"
+> > > \_\_password = None
+> > >
+> > >     def __init__(self, new_name=None):
+> > >         self.is_new = True
+> > >         if new_name is not None:
+> > >             self.name = new_name
+> > >
+> > > u = User()
+> > > u.id
+
+89
+
+2. In this following code, what is User?
+
+class User:
+id = 89
+name = "no name"
+\_\_password = None
+
+    def __init__(self, new_name=None):
+        self.is_new = True
+        if new_name is not None:
+            self.name = new_name
+
+A class
+
+3. What do these lines print?
+
+> > > class User:
+> > > id = 89
+> > > name = "no name"
+> > > \_\_password = None
+> > >
+> > >     def __init__(self, new_name=None):
+> > >         self.is_new = True
+> > >         if new_name is not None:
+> > >             self.name = new_name
+> > >
+> > > u = User()
+> > > u.name
+
+no name
+
+4. What do these lines print?
+
+> > > class User:
+> > > id = 89
+> > > name = "no name"
+> > > \_\_password = None
+> > >
+> > >     def __init__(self, new_name=None):
+> > >         self.is_new = True
+> > >         if new_name is not None:
+> > >             self.name = new_name
+> > >
+> > > u = User("John")
+> > > u.name
+
+John
+
+5. In this following code, what is is_new?
+
+class User:
+id = 89
+name = "no name"
+\_\_password = None
+
+    def __init__(self, new_name=None):
+        self.is_new = True
+        if new_name is not None:
+            self.name = new_name
+
+A public instance attribute
+
+6. In this following code, what is id?
+
+class User:
+id = 89
+name = "no name"
+\_\_password = None
+
+    def __init__(self, new_name=None):
+        self.is_new = True
+        if new_name is not None:
+            self.name = new_name
+
+A public class attribute
+
+7. What do these lines print?
+
+> > > class User:
+> > > id = 89
+> > > name = "no name"
+> > > \_\_password = None
+> > >
+> > >     def __init__(self, new_name=None):
+> > >         self.is_new = True
+> > >         if new_name is not None:
+> > >             self.name = new_name
+> > >
+> > > u = User()
+> > > u.is_new
+
+True

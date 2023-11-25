@@ -108,3 +108,151 @@ You can only use no more than 3 print functions with string format
 You can only use no more than 2 loops in your code
 You are not allowed to store numbers or strings in a variable
 You are not allowed to import any module
+
+# Evaluation Quiz
+
+0. What do these lines print?
+
+for i in range(4):
+print(i, end=" ")
+
+0 1 2 3
+
+1. What does this command line print?
+
+> > > a = "Python is cool"
+> > > print(a[-2])
+
+o
+
+2. What does this command line print?
+
+> > > print("{:d} Battery street".format(98))
+
+98 Battery street
+
+3. What does this command line print?
+
+> > > a = "Python is cool"
+> > > print(a[0:6])
+
+Python
+
+4. Who created Python?
+
+Guido van Rossum
+
+5. What do these lines print?
+
+for i in range(2, 10, 2):
+print(i, end=" ")
+
+2 4 6 8
+
+6. What do these lines print?
+
+a = 12
+if a > 2:
+if a % 2 == 0:
+print("Holberton")
+else:
+print("C is fun")
+else:
+print("School")
+
+Holberton
+
+7. What does this command line print?
+
+> > > a = "Python is cool"
+> > > print(a[7:])
+
+is cool
+
+8. What does this command line print?
+
+> > > a = "Python is cool"
+> > > print(a[:6])
+
+Python
+
+9. What do these lines print?
+
+a = 12
+if a < 2:
+print("Holberton")
+elif a % 2 == 0:
+print("C is fun")
+else:
+print("School")
+
+C is fun
+
+10. What do these lines print?
+
+if True:
+print("Holberton")
+else:
+print("School")
+
+Holberton
+
+11. What does this command line print?
+
+> > > print("{:d} Battery street, {}".format(98, "San Francisco"))
+
+98 Battery street, San Francisco
+
+12. What does this command line print?
+
+> > > a = "Python is cool"
+> > > print(a[7:-5])
+
+is
+
+13. What do these lines print?
+
+if 12 == 48/4 and False:
+print("Holberton")
+else:
+print("School")
+
+School
+
+14. What does this command line print?
+
+> > > print("Holberton school")
+
+Holberton school
+
+15. What does this command line print?
+
+> > > a = "Python is cool"
+> > > print(a[4])
+
+o
+
+16. What do these lines print?
+
+for i in range(2, 4):
+print(i, end=" ")
+
+2 3
+
+17. What do these lines print?
+
+if 12 == 48/3 or 12 is 12:
+print("Holberton")
+else:
+print("School")
+
+Holberton
+
+18. What do these lines print?
+
+if 12 == 48/4:
+print("Holberton")
+else:
+print("School")
+
+Holberton

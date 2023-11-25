@@ -141,3 +141,87 @@ It allows you to include external libraries or modules in your code.
 14. How do you access the value associated with a specific key in a dictionary?
 
 By using square brackets and specifying the key.
+
+15. What do these lines print?
+
+> > > for i in [1, 2, 3, 4]:
+> > > print(i, end=" ")
+
+1 2 3 4
+
+16. What do these lines print?
+
+> > > a = { 'id': 89, 'name': "John" }
+> > > a.get('age')
+
+Nothing
+
+17. What do these lines print?
+
+> > > a = { 'id': 89, 'name': "John", 'projects': [1, 2, 3, 4] }
+> > > a.get('projects')[3]
+
+4
+
+18.What do these lines print?
+
+> > > a = { 'id': 89, 'name': "John" }
+> > > a['id']
+
+89
+
+19. What do these lines print?
+
+> > > for i in range(0, 3):
+> > > print(i, end=" ")
+
+0 1 2
+
+20. What do these lines print?
+
+> > > a = { 'id': 89, 'name': "John", 'projects': [1, 2, 3, 4], 'friends': [ { 'id': 82, 'name': "Bob" }, { 'id': 83, 'name': "Amy" } ] }
+> > > a.get('friends')[-1].get("name")
+
+Amy
+
+21. What do these lines print?
+
+> > > for i in [1, 3, 4, 2]:
+> > > print(i, end=" ")
+
+1 3 4 2
+
+22. What do these lines print?
+
+> > > a = { 'id': 89, 'name': "John" }
+> > > a.get('age', 0)
+
+0
+
+23. What do these lines print?
+
+> > > for i in range(1, 4):
+> > > print(i, end=" ")
+
+1 2 3
+
+24. What do these lines print?
+
+> > > a = { 'id': 89, 'name': "John" }
+> > > a.get('id')
+
+89
+
+25. What do these lines print?
+
+> > > a = { 'id': 89, 'name': "John", 'projects': [1, 2, 3, 4] }
+> > > a.get('projects')
+
+[1, 2, 3, 4]
+
+26. What do these lines print?
+
+> > > for i in ["Hello", "Holberton", "School", 98]:
+> > > print(i, end=" ")
+
+Hello Holberton School 98
